@@ -1,88 +1,52 @@
-<head>
-<title>
-혁이가 추천하는 영화
-</title>
-</head>
-
-<body>
-<div style="background:#C5C8C6; border: 1px solid #48BAE4; height: auto; max-width: 700px;">
-<h1> 리틀 포레스트  </h1>
-<p> <img src="https://movie-phinf.pstatic.net/20180315_203/15211038058255kjrY_JPEG/movie_image.jpg" width="150" height="200"  align="right">
-
-<ul>
-<li><b>개요:</b> 드라마 한국 130분 2018 .02.28 개봉
-<li><strong>감독:</strong> 임순례
-<li><b>출연:</b> 김태리(혜원),류준열(재하),문소리(혜원 엄마)
-<li><b>등급:</b> [국내] 전체 관람가
-<li><b>흥행:</b>  누적관객누적관객 1,503,083명(04.11 기준)
-</ul>
-<br /><br /><br /><br />
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
 	
-	
-<center>
-	
-<h3>/
-<a href="#basic">줄거리</a> /
-<a href="#detail">배우.제작진</a> /
-<a href="#photo">포토</a> /
-<a href="#media">동영상</a> /
-</h3>
-</center>
-<h2 id="basic">줄거리</h2><br />
-“잠시 쉬어가도, 달라도, 평범해도 괜찮아!
-모든 것이 괜찮은 청춘들의 아주 특별한 사계절 이야기”
-시험, 연애, 취업… 뭐하나 뜻대로 되지 않는 일상을 잠시 멈추고
- 고향으로 돌아온 혜원은 오랜 친구인 재하와 은숙을 만난다
-  
- 남들과는 다른, 자신만의 삶을 살기 위해 고향으로 돌아온 ‘재하’, 
- 평범한 일상에서의 일탈을 꿈꾸는 ‘은숙’과 함께
- 직접 키운 농작물로 한끼 한끼를 만들어 먹으며
- 겨울에서 봄, 그리고 여름, 가을을 보내고 다시 겨울을 맞이하게 된 혜원.
-  
- 그렇게 특별한 사계절을 보내며 고향으로 돌아온 진짜 이유를 깨닫게 된 혜원은 
- 새로운 봄을 맞이하기 위한 첫 발을 내딛는데…
-	
- <h2 id="detail">배우/제작진</h2><br />
-	
-<table>
-	
-	<tr>
-		<th><img src="https://movie-phinf.pstatic.net/20180308_26/1520485621960t2OrY_JPEG/movie_image.jpg"></th>
-		<th><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2F60%2F201703271009365631.jpg"></th>
-		<th><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2F60%2F201608181802128491.jpg"></th>
-		<th><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2F127%2F201407031620415471.jpg"></th>
-	</tr>
-	
-	<tr>
-		<th><a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=1495" target="_blank">감독: 임순례a></th>
+	<body>
+		<img src="http://thumb.photo.naver.net/20141205_86/minhan85_14177586813283uDfX_JPEG/20141024-IMG_5779.jpg">
+		
+		<form action="action.php" method="post">
+		
+			<p>이름: <input type="text" name="name"> </p>
+			<p>연락처: <input type="text" name="phone" /></p>
+			<p>이용 날짜:<input type="date" name="depart" /></p>
+		
+			<fieldset style="width=30">
+				<legend>세부사항</legend>
 			
-		<th><a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=9219" target="_blank">주연: 김태리</a></th>
-		
-		<th><a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=50949">주연: 류준열</a></th>
-		
-		<th><a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=321010">주연: 문소리</a></th>
-		
-</table>
+			<p>이용시간:
+				<br />
+				<input type="radio" name="genre" value="오전(09:00)" checked="checked" /> 오전(09:00)
+				<input type="radio" name="genre" value="오후(12:00)" /> 오후(12:00)
+				<input type="radio" name="genre" value="저녁(18:00)" /> 저녁(18:00)
+			</p>
+			
+			<p>사전 확인 사항:
+				<br />
+				<input type="checkbox" name="service[]" value="비흡연석" checked="checked" /> 비흡연석
+				<input type="checkbox" name="service[]" value="창가쪽" /> 창가쪽
+				<input type="checkbox" name="service[]" value="주차이용" /> 주차이용
+			</p>
+			
+			<p>선호하는 쉐프 ?</p>
+			<select name="chef">
+				<option value="이용복">이용복 쉐프</option>
+				<option value="최현석">최현석 쉐프</option>
+				<option value="강레오">강레오 쉐프</option>
+			</select>
+			</fieldset>
+			
+			
+			<p>긴글 작성: <textarea name="comments" cols="20" rows="4">기타 요구사항을 작성해 주세요~~</textarea></p>
 
- <h2 id="photo">포토</a></h2><br />
- <img src="https://movie-phinf.pstatic.net/20180202_271/1517551492934JGorM_JPEG/movie_image.jpg?type=w221_2">
- <img src="https://movie-phinf.pstatic.net/20180207_269/1517967428232lw1l6_JPEG/movie_image.jpg?type=w221_2">
- <img src="https://movie-phinf.pstatic.net/20180207_61/1517967428421CNh7t_JPEG/movie_image.jpg?type=w221_2">
- <img src="https://movie-phinf.pstatic.net/20180207_61/1517967428421CNh7t_JPEG/movie_image.jpg?type=w221_2">
- <img src="https://movie-phinf.pstatic.net/20180326_10/1522025301060UWqyo_JPEG/movie_image.jpg?type=w221_2">
- <img src="https://movie-phinf.pstatic.net/20180214_300/1518583654385a6rhe_JPEG/movie_image.jpg?type=w221_2">
- 
- <h2 id="media">동영상</a></h2><br />
- <center>
- <video width="640" height="480" controls>
-<source src="https://vod-naver.pstatic.net/navertv/owfs_rmc/read/navertv_2018_03_28_351/d6500124-3250-11e8-9fa6-0000000041ed.mp4?_lsu_sa_=6995f6fff1796d86f4d705586895a9bf1e343988ec0c0fa03eb738cc77ac31b51f21dacf6675ba07301832f21f314beedac189f576431d9cafac82870117f7006cd77ab38f9e10cd81e825ece791a377" type="video/mp4">
-</video>
- 
- </center>
- 
- </div>
- 
- 
- 
-</body>
-<h1>
+			<p><input type="submit" /></p>
+		</form>	
+
+	
+	</body>
+
+
+</html>
+
+
